@@ -1,102 +1,145 @@
-<h1 align="center">Hi, I'm Kartik Divte 👋</h1>
+# ⚙️ Predictive Maintenance Model
 
-<p align="center">
-  <b>Data Analyst · ML Enthusiast · Published Researcher</b><br>
-  BSc IT · 9.40 CGPA · Kalyan, Maharashtra
-</p>
+> Predicting machine failures before they happen — trained on sensor data from 10,000 machines using multi-class classification.
 
-<p align="center">
-  <a href="mailto:kartikdivte@gmail.com">📧 Email</a> &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/kartikdivte/">LinkedIn</a>
-</p>
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
 
 ---
 
-## 👨‍💻 About Me
+## 📌 Project Overview
 
-I'm a Data Analyst Intern at **HackVeda** (Delhi NCR), where I own full data workflows — from raw data ingestion and cleaning to model training and visual delivery. I've delivered three end-to-end projects across retail, manufacturing, and business analytics using Python, Scikit-learn, and Power BI.
+Unplanned machine downtime is one of the most costly problems in manufacturing. This project builds a **predictive maintenance system** that uses operational sensor data to classify the type of failure a machine is likely to experience — before it actually fails.
 
-I also built and published a **hardware-integrated RFID authentication system** deployed to 120+ students, with a research paper peer-reviewed and published in **IRJMETS (April 2025)**.
+Trained and evaluated **4 machine learning classifiers** on a dataset of 10,000 machines, selecting the best-performing model for deployment-ready recommendation.
 
-Currently seeking a full-time **Data Analyst or Data Scientist** role.
+---
+
+## 📊 Dataset
+
+| Property | Details |
+|---|---|
+| Machines | 10,000 |
+| Features | Temperature, power output, torque, tool wear rate, rotational speed |
+| Target | 5 failure types (multi-class classification) |
+| Class Balance | Handled via analysis during EDA |
+
+### Failure Types
+| Label | Failure Type |
+|---|---|
+| 0 | No Failure |
+| 1 | Heat Dissipation Failure |
+| 2 | Power Failure |
+| 3 | Overstrain Failure |
+| 4 | Tool Wear Failure |
+| 5 | Random Failure |
+
+---
+
+## 🔍 Methodology
+
+1. **Data Ingestion & Cleaning** — Handled missing values, outliers, and data type corrections using Pandas
+2. **Exploratory Data Analysis (EDA)** — Visualised feature distributions, class imbalance, and correlations
+3. **Feature Engineering** — Derived meaningful features from raw sensor readings; applied label encoding for multi-class targets
+4. **Model Training** — Trained 4 classifiers with consistent train/test splits
+5. **Model Evaluation** — Compared models on accuracy, precision, recall, and F1-score
+6. **Feature Importance** — Identified top predictors using Random Forest feature importance scores
+
+---
+
+## 📈 Model Comparison
+
+| Model | Test Accuracy |
+|---|---|
+| 🥇 Random Forest | **98.5%** |
+| 🥈 Logistic Regression | 98.05% |
+| 🥉 Decision Tree | 97.70% |
+| SVM | 96.15% |
+
+> ✅ **Random Forest selected as the final model** based on highest test accuracy and robustness to overfitting.
+
+---
+
+## 🔑 Key Findings
+
+- **Overstrain and Heat Dissipation** were identified as the strongest failure predictors via feature importance analysis
+- Random Forest outperformed all other classifiers across all evaluation metrics
+- Feature engineering from raw sensor readings (temperature, torque, tool wear rate) significantly improved model performance
+
+---
+
+## 💡 Business Impact
+
+- Enables maintenance teams to **act before failure occurs**, reducing unplanned downtime
+- Classifying failure *type* (not just yes/no) allows targeted interventions — e.g. cooling fixes for heat dissipation vs. load reduction for overstrain
+- A 98.5% accurate model on 10,000 machines translates to significant cost savings in a real manufacturing environment
 
 ---
 
 ## 🛠️ Tech Stack
 
-**Languages**
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=mysql&logoColor=white)
-
-**Libraries & Frameworks**
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat)
-![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?style=flat)
-
-**Visualisation**
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
-![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat&logo=tableau&logoColor=white)
-
-**Databases**
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
-![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=flat&logo=mariadb&logoColor=white)
-
-**Tools**
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-![Google Colab](https://img.shields.io/badge/Colab-F9AB00?style=flat&logo=googlecolab&logoColor=black)
+- **Python** — Core development language
+- **Pandas / NumPy** — Data cleaning and feature engineering
+- **Scikit-learn** — Model training, evaluation, and comparison
+- **Matplotlib / Seaborn** — EDA visualisations and feature importance plots
+- **Jupyter Notebook** — Development and documentation
 
 ---
 
-## 📂 Featured Projects
+## 📁 Repository Structure
 
-### 🛒 [Market Basket Analysis](https://github.com/HeatxCliff/market-basket-analysis)
-> Apriori algorithm · Python · Mlxtend · Pandas
-
-Mined **541,909 retail transactions** to extract frequent itemsets and association rules. Generated cross-sell recommendations with **lift scores up to 39.2** and confidence up to 100%, identifying high-affinity product pairs across stationery, kitchenware, and home accessories.
-
----
-
-### ⚙️ [Predictive Maintenance Model](https://github.com/HeatxCliff/predictive-maintenance)
-> Random Forest · Scikit-learn · Python · Multi-class Classification
-
-Trained and compared **4 classifiers** on sensor data from 10,000 machines to predict 5 failure types. **Random Forest achieved 98.5% test accuracy**. Engineered features from raw sensor readings — temperature, torque, tool wear rate — and identified overstrain and heat dissipation as top failure predictors.
-
----
-
-### 📊 [Interactive Sales Dashboard](https://github.com/HeatxCliff/sales-dashboard)
-> Power BI · Tableau · DAX
-
-Built a regional sales analytics dashboard tracking **profit margin and average sales across 6+ regions** with drill-down filters by region and product category — replacing static monthly reports with self-service insights for regional managers.
+```
+predictive-maintenance/
+│
+├── data/
+│   └── predictive_maintenance.csv     # Raw sensor dataset
+│
+├── notebooks/
+│   └── predictive_maintenance.ipynb   # Full analysis and modelling notebook
+│
+├── outputs/
+│   ├── model_comparison.png           # Accuracy comparison chart
+│   └── feature_importance.png         # Top predictors plot
+│
+├── requirements.txt
+└── README.md
+```
 
 ---
 
-### 🔐 [Lab Authentication System — Raspberry Pi & RFID](https://github.com/HeatxCliff/lab-auth-system)
-> Python · Raspberry Pi · MariaDB · HTML/CSS/JS · Published Research
+## 🚀 How to Run
 
-Designed and deployed an RFID-based student authentication system across a **30-PC lab**, achieving **sub-2-second authentication** and reducing manual entry errors by 90%+. Validated across a 2-week pilot with 120+ students. Research paper published in **IRJMETS, April 2025**.
+```bash
+# 1. Clone the repository
+git clone https://github.com/HeatxCliff/predictive-maintenance.git
+cd predictive-maintenance
 
----
+# 2. Install dependencies
+pip install -r requirements.txt
 
-## 📜 Certifications & Achievements
-
-- 🏆 **Outstanding Leadership Award** — B. K. Birla College, April 2025
-- 📄 **Published Research** — IRJMETS, April 2025 · Lab Authentication System
-
----
-
-## 📈 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=HeatxCliff&show_icons=true&theme=default&hide_border=true" height="150"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HeatxCliff&layout=compact&theme=default&hide_border=true" height="150"/>
-</p>
+# 3. Launch the notebook
+jupyter notebook notebooks/predictive_maintenance.ipynb
+```
 
 ---
 
-<p align="center">
-  <i>Open to full-time Data Analyst / Data Scientist roles. Feel free to reach out!</i>
-</p>
+## 📦 Requirements
+
+```
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+jupyter
+```
+
+---
+
+## 👤 Author
+
+**Kartik Divte**
+📧 kartikdivte@gmail.com
+💼 [LinkedIn](https://www.linkedin.com/in/kartikdivte/)
