@@ -7,8 +7,7 @@
 
 <p align="center">
   <a href="mailto:kartikdivte@gmail.com">📧 Email</a> &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a> &nbsp;·&nbsp;
-  <a href="https://www.kaggle.com/YOUR-KAGGLE">Kaggle</a>
+  <a href="https://www.linkedin.com/in/kartikdivte/">LinkedIn</a>
 </p>
 
 ---
