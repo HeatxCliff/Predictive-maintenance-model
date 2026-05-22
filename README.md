@@ -53,28 +53,28 @@ Currently seeking a full-time **Data Analyst or Data Scientist** role.
 
 ## 📂 Featured Projects
 
-### 🛒 [Market Basket Analysis](https://github.com/YOUR-USERNAME/market-basket-analysis)
+### 🛒 [Market Basket Analysis](https://github.com/HeatxCliff/market-basket-analysis)
 > Apriori algorithm · Python · Mlxtend · Pandas
 
 Mined **541,909 retail transactions** to extract frequent itemsets and association rules. Generated cross-sell recommendations with **lift scores up to 39.2** and confidence up to 100%, identifying high-affinity product pairs across stationery, kitchenware, and home accessories.
 
 ---
 
-### ⚙️ [Predictive Maintenance Model](https://github.com/YOUR-USERNAME/predictive-maintenance)
+### ⚙️ [Predictive Maintenance Model](https://github.com/HeatxCliff/predictive-maintenance)
 > Random Forest · Scikit-learn · Python · Multi-class Classification
 
 Trained and compared **4 classifiers** on sensor data from 10,000 machines to predict 5 failure types. **Random Forest achieved 98.5% test accuracy**. Engineered features from raw sensor readings — temperature, torque, tool wear rate — and identified overstrain and heat dissipation as top failure predictors.
 
 ---
 
-### 📊 [Interactive Sales Dashboard](https://github.com/YOUR-USERNAME/sales-dashboard)
+### 📊 [Interactive Sales Dashboard](https://github.com/HeatxCliff/sales-dashboard)
 > Power BI · Tableau · DAX
 
 Built a regional sales analytics dashboard tracking **profit margin and average sales across 6+ regions** with drill-down filters by region and product category — replacing static monthly reports with self-service insights for regional managers.
 
 ---
 
-### 🔐 [Lab Authentication System — Raspberry Pi & RFID](https://github.com/YOUR-USERNAME/lab-auth-system)
+### 🔐 [Lab Authentication System — Raspberry Pi & RFID](https://github.com/HeatxCliff/lab-auth-system)
 > Python · Raspberry Pi · MariaDB · HTML/CSS/JS · Published Research
 
 Designed and deployed an RFID-based student authentication system across a **30-PC lab**, achieving **sub-2-second authentication** and reducing manual entry errors by 90%+. Validated across a 2-week pilot with 120+ students. Research paper published in **IRJMETS, April 2025**.
@@ -91,8 +91,8 @@ Designed and deployed an RFID-based student authentication system across a **30-
 ## 📈 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YOUR-USERNAME&show_icons=true&theme=default&hide_border=true" height="150"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR-USERNAME&layout=compact&theme=default&hide_border=true" height="150"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=HeatxCliff&show_icons=true&theme=default&hide_border=true" height="150"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HeatxCliff&layout=compact&theme=default&hide_border=true" height="150"/>
 </p>
 
 ---
